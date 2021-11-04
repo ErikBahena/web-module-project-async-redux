@@ -12,6 +12,7 @@ import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 
 const store = createStore(reducer, applyMiddleware(thunk));
+console.log(store.getState());
 
 ReactDOM.render(
   <React.StrictMode>
